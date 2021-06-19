@@ -22,12 +22,12 @@ This is a 2 step process: Salesforce, and .NetCore
 - Create a new Aura App named "lightningout" with the following content: 
 ```
 <aura:application access="GLOBAL" extends="ltng:outApp" implements="ltng:allowGuestAccess" >
-    <aura:dependency resource="c:portalClarificationCmp"/> 
+    <aura:dependency resource="c:lightningoutCmp"/> 
 </aura:application>
 ```
 - Create a new Aura Component named "lightningoutCmp" with the following content: 
 ```
-<aura:component controller="lightningOutController" implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+<aura:component controller="LightningOutController" implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
     <aura:attribute name="requestObj" type="Map" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
