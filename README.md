@@ -16,8 +16,8 @@ After authentication, you'll be able to initiate your Lightning Out components a
 This is a 2 step process: Salesforce, and .NetCore
 
 ## Salesforce side: 
-- First, you need to create a Connected App in your Salesforce Org. Nothing fancy, just a connected app allowing OAuth authentication, that "Access and Manage your data (API)".
-- (Optional) Based on how is configured your org, you might need to add a Remote Site Setting and a CORS Setting, allowing Salesforce to emit/receive content from the given URL. 
+- First, you need to create a Connected App in your Salesforce Org. Nothing fancy, just a connected app allowing OAuth authentication, with the "Access and Manage your data (API)" OAuth scope.
+- (Optional) Based on how your org is configured, you might need to add a Remote Site Setting and a CORS Setting, allowing Salesforce to emit/receive content from the given URL. 
 - For a smoother process, use "Relax IP Address". Once the build is approved, do not forgot to restrict the IP Addresses to your known hosts. 
 - Create a new Aura App named "lightningout" with the following content: 
 ```
